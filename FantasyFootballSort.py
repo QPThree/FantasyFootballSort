@@ -1,7 +1,7 @@
 
 # Work with Pandas and data munging
 import pandas as pd
-
+#or some things here
 df = pd.read_csv('https://raw.githubusercontent.com/fantasydatapros/data/master/fantasypros/fp_projections.csv')
 
 #iloc shows us which [columns, rows] to look at.  In this case, all columns, and all but the first row
@@ -22,3 +22,4 @@ wr_df = df.loc[(df['Pos'] == 'WR'), base_columns + WR_columns]
 print(wr_df.sort_values(by = 'ReceivingTD', ascending = False).head(25))
 
 
+#i can add some stuff here 
